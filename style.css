@@ -1,0 +1,104 @@
+/* Corps
+************************************************************/
+body
+{
+	text-align: center;
+	font-size: 100%;
+	font-family:  Tahoma, Verdana, arial, sans-serif;
+	background: #ffe;
+	color: #550000;
+}
+table
+{
+text-align: left;
+	font-size: 90%;
+}
+/* Images
+**************/
+img {
+	border:0;
+}
+/* Liens
+************************************************************/
+a {
+	color: #c30;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #f90;
+	text-decoration: none;
+}
+h1.header
+{
+font-size: 150%;
+font-family: Papyrus, Tahoma, arial, sans-serif;
+}
+h2{
+font-family: Papyrus, Tahoma, arial, sans-serif;
+	}
+
+
+table.h3 {
+	font-size: 100%;
+	}
+.popup
+{
+background-color : "#ffffcc";
+ color : DarkBlue;
+ font-size : 12px;
+ margin-top : 10px;
+ margin-left : 10px;
+ margin-right : 10px;
+ margin-bottom : 10px;
+}
+.popup ul
+{
+font-size : 10px;
+color : black;
+}
+/* navigation
+***********************************************/
+.container {
+	padding: 30px;
+	margin: 10px 0 10px 0;
+	}
+
+#minitabs {
+	margin: 0;
+	padding: 0 0 20px 10px;
+	border-bottom: 2px solid #c63;
+	}
+
+#minitabs li {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+	}
+	
+#minitabs a:link, #minitabs a:visited {
+	float: left;
+	font-size: 90%;
+	line-height: 14px;
+	font-weight: bold;
+	margin: 0 10px 4px 10px;
+	padding-bottom: 2px;
+	text-decoration: none;
+	color: #f96;
+	}
+
+#minitabs a.active:link, #minitabs a.active:visited, #minitabs a:hover {
+	border-bottom: 4px solid #c63;
+	padding-bottom: 2px;
+	color: #930;
+	}
+
+
+/* Pied de page
+************************************************************/
+.footer {
+	clear: left;
+	font-size: 75%;
+}
+

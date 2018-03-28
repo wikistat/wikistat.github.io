@@ -1,7 +1,257 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.math.univ-toulouse.fr/~besse/Wikistat/favicon.ico"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Language" content="fr" />
+    <meta name="keywords" content= wikistat, statistics, statistique, data mining, big data, Analytics, Data Science, Science des données, mutivariate statistics, functional data analysis, SAS, Python, Spark, langage S, R, modélisation, apprentissage/>
+    <meta name="Identifier-URL" content="http://wikistat.fr"/>
+    <meta name="description" content="Cours de Statistique et Sciences des Données"/>
+    <title>Statistics & Data Science</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+ </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <table width="100%" >
+      <tr>
+        <td align="center" valign="middle">
+          <table width="720" >
+            <tr align="center" >
+			<td> 
+			<table width="160" >
+			<tr align="center" valign="middle">
+			<td>
+			<a  href="http://www.insa-toulouse.fr" ><img src="Images/logo_udt.jpg" width="60"  alt="Université de Toulouse"/> </a>   
+			</td>
+			<td>
+			<a  href="http://www.insa-toulouse.fr" ><img src="Images/logo_ups_pres.png" width="100"  alt="UT3"/> </a> <br> </br>
+			<a  href="http://www.insa-toulouse.fr" ><img src="Images/logo-insa.jpg" width="90"  alt="Réseau INSA"/> </a> 
+			</td>
+			</tr>
+			</table >
+			</td>
+              <td ><h1 class="header">
+                <a  href="http://wikistat.fr" ><img src="Images/wikistat.jpg"  height="60" alt="WikiStat"/></a> </h1>
+				<h1 class="header">
+				Statistique & Machine Learning</h1>
+				<h1 class="header">
+				de Statisticien à Data Scientist</h1>
+								
+              </td>
+			  <td><a id="haut"></a>
+<a  href="http://math.univ-toulouse.fr/" ><img src="Images/logo_imt.jpg" width="180"  alt="Institut de Mathématiques de Toulouse"/> </a>  <br>
+			<a  href="http://www.tse-fr.eu/fr/groups/mathematiques-de-la-decision-et-statistique" ><img src="Images/logotse2012.jpg" width="140"  alt="TSE"/> </a></td>
+            </tr>
+		</table>
+<table width="720" cellspacing= "10">
+	<tr align="left"> 
+	<td valign="top">
+	<b>Attention </b> Le site est en cours de migation vers <a href="http://github.com/wikistat/" target="_blank"><i>Github.com/wikistat</i></a> dépôt de tous les scénarios / tutoriels sous la forme de calepins (<i>jupyter notebook</i>) en R ou Python. <br>
+	
+                Tous les documents sont mis à disposition selon les termes de la licence <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr">Creative Commons Paternity 3.0 France </a> 
+				Pas d'Utilisation Commerciale - Partage avec des Conditions Initiales à l'Identique.<br>
+		</td>
+			<td width="355",valign="top">
+   <b>Citer une vignette </b> selon le format de l'exemple ci-dessous: <br>
+   @misc{ wikistat-clustering, <br>
+   author = "Wikistat", <br>
+   title = "Classification non-supervisée  --- Wikistat", <br>
+   year = "2016",<br>
+   url = "http://wikistat.fr/pdf/st-m-explo-classif.pdf", <br>
+   note = "[En ligne; Page disponible le 21-janvier-2016]"<br>
+       }<br>
+   </td>
+
+</tr>
+</table>
+<table width="720" cellspacing= "0">
+
+<tr>
+<td valign="top">
+<h3> Généralités </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-wikistat-presentation.pdf" >Présentation de Wikistat </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-lm-Intro-Stat_SD.pdf" >De la Statistique à la Science des Données</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-deontologie.pdf" >Statistique et déontologie scientifique </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-redac-rapport-stat.pdf" >Rédiger un rapport de statistique </a></li>
+</ul>
+
+</td>
+<td valign="top">
+<h3> Logiciel R </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-tutor1-start-R.pdf" >Démarrer en R </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-tutor2-R-init.pdf" >Initiation à R </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-tutor3-R-graph.pdf" >Graphes avec R </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-tutor4-R-prog.pdf" >Programmer en R </a></li>
+</ul>
+
+</td>
+<td valign="top">
+<h3> Logiciel SAS </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-tutor1-sas-init.pdf">Tutoriel 1 prise en main</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-tutor2-sas-gestion.pdf">Tutoriel 2 SAS de base</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-tutor3-sas-graph.pdf">Tutoriel 3 SAS/Graph</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-tutor4-sas-macros.pdf">Tutoriel 4 macros commandes</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-tutor5-sas-sql.pdf">Tutoriel 5 SQL</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h2>Statistique niveau L </h2>
+<table width="720" cellspacing= "0">
+<tr>
+<td valign="top">
+<h3> Description</h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-l-Intro-statElem.pdf">Statistique élémentaire: Introduction</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-l-des-uni.pdf">Statistique descriptive unidimensionnelle</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-l-des-bi.pdf">Statistique descriptive bidimensionnelle</a></li>
+</a></li>
+</ul>
+</td>
+<td valign="top">
+<h3> Inférence </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-l-inf-probas.pdf">Probabilités élémentaires</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-l-inf-estim.pdf">Estimation statistique</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-l-inf-tests.pdf">Tests statistiques</a></li>
+</ul>
+</td>
+<td valign="top">
+<h3> Modélisation </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-l-des-multi.pdf">Introduction à l'analyse en composantes principales<li><a  href="http://wikistat.fr/pdf/st-l-inf-regsim.pdf">Régression linéaire simple</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-l-inf-intRegmult.pdf">Introduction régression multiple</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+<h2>Statistique niveau M1 </h2>
+<table width="720" cellspacing= "0">
+<tr>
+<td valign="top">
+<h3> Exploration multivariée </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-m-Intro-ExploMultidim.pdf">Exploration multidivariée: Introduction</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-acp.pdf">Analyse en Composantes Principales</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-acc.pdf">Analyse Canonique des Corrélations</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-afd.pdf">Analyse Factorielle Discriminante</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-afc.pdf">Analyse Factorielle des Correspondances</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-afcm.pdf">Analyse Factorielle Multiple des Correspondances </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-mds.pdf">Positionnement Multidimensionnel</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-classif.pdf">Classification non supervisée</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-datSc4-EMmixt.pdf">Mixture models with E.M.</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-nmf.pdf">Factorisation par matrices non négatives (NMF)</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-explo-alglin.pdf">Compléments d'algèbre linéaire</a></li>
+</ul>
+</td>
+<td valign="top">
+<h3> Inférence </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-m-inf-esti.pdf">Estimation</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-inf-test.pdf">Tests paramétriques</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-inf-np.pdf">Tests non paramétriques</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-inf-khi2.pdf">Test du Chi2</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-inf-rgls-modlin.pdf">Introduction au modèle linéaire</a></li>
+</ul>
+</td>
+<td valign="top">
+<h3> Modélisation </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-m-modlin-intro.pdf">Introduction à la modélisation statistique</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modlin-regsim.pdf">Modèle gaussien : régression linéaire simple</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modlin-regmult.pdf">Modèle gaussien : régression linéaire multiple </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modlin-anacova.pdf">Modèle gaussien : analyse de (co)variance</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modlin-reglog.pdf">Modèle binomial ou régression logistique</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modlin-loglin.pdf">Modèle poissonnien ou loglinéaire</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modlin-mlg.pdf">Introduction au modèle linéaire général</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h2>Statistique et apprentissage automatique (<i>machine learning</i>) niveau M2 </h2>
+<table width="720" cellspacing= "0">
+<tr>
+<td valign="top">
+<h3> Modèle mixte </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt1-intro.pdf">Introduction à la modélisation statistique</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt2-modlin.pdf">Généralités sur le modèle linéaire</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt3-anova.pdf">Analyse de variance univariée</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt4-plans.pdf">Plans d'expérience incomplets</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt5-manova.pdf">Analyse de variance multivairée</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt6-modmixt.pdf">Modèle à effets aléatoires et modèle mixte</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt7-mesrepet.pdf">Modèles pour mesures répétées</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt8-bonfer.pdf">A propos de la méthode Bonferroni</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixt9-somcarr.pdf">Différents types de sommes de carrés</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixta-testrepet.pdf">Tests multidimensionnels pour données répétées</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-modmixtb-biblio.pdf">Bibliographie</a></li>
+</ul>
+</td>
+<td valign="top">
+<h3> Apprentissage  Statistique ...</h3>   
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-m-Intro-ApprentStat.pdf">Apprentissage machine: Introduction</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-risque.pdf">Qualité de prévision et risque</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-linSelect.pdf">Sélection de modèle dans le cas gaussien</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-non-param.pdf">Modèles non paramétriques</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-rlogit.pdf">Régression logistique</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-sparse-pls.pdf">Composantes principales et régression PLS parcimonieuses</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-add.pdf">Analyse discriminante décisionnelle</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-rn.pdf">Réseaux de neurones</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-cart.pdf">Arbres binaires de décision</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-agreg.pdf">Agrégation de modèles</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-svm.pdf">Machines à vecteurs supports</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-idm.pdf">Imputation de données manquantes</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-anomalies.pdf">Détection d'anomalies</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-bootstrap.pdf">Introduction au bootstrap</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-app-conclusion.pdf">Conclusion sur l'apprentissage</a></li>
+</ul>
+</td>
+<td valign="top">
+<h3> & ... Data Science </h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-m-datSc1-convOpt.pdf"> Convex optimisation and application </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-datSc2-regHD.pdf">  High dimensional regression </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-datSc3-colFil.pdf"> Collaborative filtering</a> </li>
+<li><a  href="http://wikistat.fr/pdf/st-m-datSc5-StocAlg.pdf"> Sequential and reinforcement learning. Stochastic Optimization 1</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-datSc6-secDecAlg.pdf"> Sequential and reinforcement learning. Stochastic Optimization 2</a></li>
+<li><a  href="http://www.nathalievilla.org/doc/pdf//wikistat-network_compiled.pdf"> An introduction to network inference and mining</a></li>
+</ul>
+<h3><i> High Dimensional Statistics </i></h3>
+<ul>
+<li><a  href="http://wikistat.fr/pdf/st-m-hdstat-linselect.pdf">  Linear Models for Regression and Model Selection</a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-datSc2-regHD.pdf">  High dimensional regression </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-hdstat-non-param.pdf"> Nonparametric Learning and Regularization </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-hdstat-classification.pdf">  High Dimensional Classification </a></li>
+<li><a  href="http://wikistat.fr/pdf/st-m-hdstat-rnn-deep-learning.pdf"> Neural Networks and Introduction to Deep Learning</a> </li>
+</ul>
+</td>
+</tr>
+</table>
+
+<table width="720" cellspacing= "0">
+
+<tr>
+              <td colspan="2" class="footer">
+                <hr />
+	<p>
+                Tous les documents sont mis à disposition selon les termes de la licence <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr">Creative Commons Paternity 3.0 France </a> <br>
+				Pas d'Utilisation Commerciale - Partage avec des Conditions Initiales à l'Identique.<br>
+   </p>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  </body>
 </html>
+
